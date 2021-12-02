@@ -33,15 +33,16 @@ public class Problema09 {
                 if (numero1 % 12 == 0){
                     signo = signo2;
                 } else {
-                    if ((numero2 == 1) || (numero2 % 11 == 0)) {
-                    }
+                    if ((numero2 == 11) || (numero2 % 11 == 0)) {
                     signo = signo1;
+                    }
+                    
                 }
 
-                cadena = String.format("%s%s%d %s%d ",
+                cadena = String.format("%s %s%d %s%d",
                         cadena,
                         signo2,
-                        numero1, signo2,
+                        numero1, 
                         signo1,
                         numero2);
                 numero1 = numero1 + 12;
